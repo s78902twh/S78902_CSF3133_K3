@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lab 2 Exercise - Personal Profile Page</title>">
+    </head>
+    <body>
+        <!--Semantic Tag : Header-->
+        <header>
+            <h1>Welcome to My Personal Profile</h1>
+        </header>
+
+        <!--Semantic Tag : Navigation-->
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#profile-table">Personal Information</a> |
+            <a href="#registration">Register</a>
+        </nav>
+
+        <!--Semantic Tag : Main Content-->
+        ,section id="home">
+            <article>
+                <h2> About This Page</h2>
+                <p>This is a personal profile page created as part of Lab 2 exercise.</p>
+            </article>
+        </section>
+
+        <!--Requirement 1 : Table(3 rows and 3 columns)-->
+        <section id="profile-table">
+            <h2>Personal Information</h2>
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Occupation</th>
+                </tr>
+                <tr>
+                    <td>Wafa Hanani</td>
+                    <td>21</td>
+                    <td>Web Developer</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>25</td>
+                    <td>Graphic Designer</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>30</td>
+                    <td>Software Engineer</td>
+                </tr>
+            </table>
+        </section>
+
+        <!--Requirement 2 : Form(Name , Email, Gender, Hobbies, Submit)-->
+        <section id="registration">
+            <h2>Registration Form</h2>
+            <form action="/submit_form.php" method="post">
+                <!--Name Input-->
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <!--Email Input-->
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <!--Radio Buttons : Gender-->
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label><br><br>
+
+                <!--Hobbies Checkbox : Favourite Hobbies-->
+                <label>Favourite Hobbies:</label><br>
+                <input type="checkbox" id="hobby1" name="hobby1" value="reading">
+                <label for="hobby1">Reading</label><br>
+                <input type="checkbox" id="hobby2" name="hobby2" value="Gaming">
+                <label for="hobby2">Gaming</label><br><br>
+                <input type="checkbox" id="hobby3" name="hobby3" value="Sports">
+                <label for="hobby3">Sports</label><br><br>
+
+                <!--Submit Button-->
+                <input type="submit" value="Register">
+            </form>
+            </section>
+
+            <!--Semantic Tag : Footer-->
+            <footer>
+                <p>&copy; 2026 My Web Page. All rights reserved.</p>
+            </footer>
+        </section>
+    </body>
+</html>
