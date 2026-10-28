@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CSF3133 - Faculty Hackathon 2026</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>CSF3133 Annual Faculty Hackathon 2026</h1>
+        <p>Innovate, Code, and Build the Future Together</p>
+    </header>
+
+    <!-- Navigation Bar with Internal Anchor Links -->
+    <nav>
+        <a href="#about">About the Event</a> |
+        <a href="#schedule">Event Schedule</a> |
+        <a href="#register">Registration</a>
+    </nav>
+
+    <!-- Main Content Sections -->
+
+    <!-- Section 1: About the Event -->
+    <section id="about">
+        <h2>About the Event</h2>
+        <p>Join us for an intensive one-day hackathon where students collaborate to solve real-world problems through software engineering.</p>
+        
+        <!-- Article 1: Keynote Speaker -->
+        <article>
+            <h3>Keynote Speaker: Dr. Alya Mawaddah</h3>
+            <p>Dr. Alya Mawaddah is an <strong>AI researcher</strong> who will share insights on leveraging artificial intelligence in modern web applications.</p>
+        </article>
+
+        <!-- Article 2: Highlight Activity -->
+        <article>
+            <h3>Activity Highlight: 3-Hour Rapid Prototyping Sprint</h3>
+            <p>Participants will team up to design and pitch a functional prototype within a strict three-hour window.</p>
+        </article>
+    </section>
+
+    <!-- Section 2: Event Schedule Table -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <table border="1">
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+            <tr>
+                <td>08:30 AM - 09:30 AM</td>
+                <td>Registration &amp; Welcome Breakfast</td>
+                <td>Main Foyer</td>
+                <td>Mr. Wafi</td>
+            </tr>
+            <tr>
+                <td>09:30 AM - 10:30 AM</td>
+                <td>Keynote Address: Future of Web Dev</td>
+                <td>Auditorium A</td>
+                <td>Dr. Alya Mawaddah</td>
+            </tr>
+            <!-- Rowspan Example: Both Lab 1 & Lab 2 happen in Computer Lab 3 -->
+            <tr>
+                <td>10:30 AM - 12:00 PM</td>
+                <td>Hands-on Workshop: Web APIs</td>
+                <td rowspan="2">Computer Lab 3</td>
+                <td>Dr. Alya Mawaddah</td>
+            </tr>
+            <tr>
+                <td>12:00 PM - 01:00 PM</td>
+                <td>Hands-on Workshop: UI/UX Prototyping</td>
+                <td>Ms. Auni</td>
+            </tr>
+            <!-- Colspan Example: Lunch break spans across Activity, Venue, and Person in Charge -->
+            <tr>
+                <td>01:00 PM - 02:00 PM</td>
+                <td colspan="3">Lunch Break &amp; Networking</td>
+            </tr>
+            <tr>
+                <td>02:00 PM - 05:00 PM</td>
+                <td>3-Hour Rapid Prototyping Sprint</td>
+                <td>BYOD1</td>
+                <td>Prof. Wan Ezzah</td>
+            </tr>
+            <tr>
+                <td>05:00 PM - 06:00 PM</td>
+                <td>Pitching Session &amp; Closing Ceremony</td>
+                <td>Auditorium A</td>
+                <td>Organising Committee</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Section 3: Registration Form -->
+    <section id="register">
+        <h2>Student Registration</h2>
+        <form action="register.html" method="post">
+            <!-- Text Inputs with Linked Labels -->
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="matric">Matric Number:</label><br>
+            <input type="text" id="matric" name="matric" required><br><br>
+
+            <label for="email">E-mail Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <!-- Radio Buttons for Year of Study (Grouped by name) -->
+            <label>Year of Study:</label><br>
+            <input type="radio" id="year1" name="year" value="1" required>
+            <label for="year1">Year 1</label>
+            <input type="radio" id="year2" name="year" value="2">
+            <label for="year2">Year 2</label>
+            <input type="radio" id="year3" name="year" value="3">
+            <label for="year3">Year 3</label>
+            <input type="radio" id="year4" name="year" value="4">
+            <label for="year4">Year 4</label><br><br>
+
+            <!-- Dropdown List for Programme / Faculty -->
+            <label for="programme">Programme / Faculty:</label><br>
+            <select id="programme" name="programme" required>
+                <option value="">-- Please Select --</option>
+                <option value="software_engineering">Software Engineering</option>
+                <option value="computer_science">Computer Science</option>
+                <option value="data_analytics">Data Analytics</option>
+                <option value="information_technology">Information Technology</option>
+            </select><br><br>
+
+            <!-- Checkboxes for Sessions to Join -->
+            <label>Select Sessions to Join:</label><br>
+            <input type="checkbox" id="session1" name="sessions" value="keynote">
+            <label for="session1">Keynote Address</label><br>
+            <input type="checkbox" id="session2" name="sessions" value="workshops">
+            <label for="session2">Hands-on Workshops</label><br>
+            <input type="checkbox" id="session3" name="sessions" value="sprint">
+            <label for="session3">Rapid Prototyping Sprint</label><br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register Now">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Organised by Faculty of Computer Science and Mathematics, UMT</p>
+        <p>Copyright &copy; 2026 CSF3133. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
