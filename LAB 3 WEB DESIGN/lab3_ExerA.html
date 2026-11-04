@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Bakery Online Order</title>
+</head>
+<body>
+
+    <!-- ==================== 1. Header Section ==================== -->
+    <div id="header">
+        <h1>CampusBake&reg; <span>- Freshly Baked on Campus Everyday</span></h1>
+    </div>
+
+    <!-- ==================== 2. Navigation Section ==================== -->
+    <div id="nav">
+        <a href="#header">Home</a> |
+        <a href="#sidebar">Menu &amp; Pricing</a> |
+        <a href="#content">Order Form</a>
+    </div>
+
+    <!-- ==================== 3. Content Section ==================== -->
+    <div id="content">
+        <h2>Welcome to Our Bakery</h2>
+        <!-- Paragraph with at least three inline elements: <strong>, <em>, <span>, and <a> -->
+        <p>
+            Welcome to the <strong>official pre-order page</strong>! We offer <em>freshly made</em> pastries, cakes, and treats crafted daily. Check out our <span>exclusive deals</span> below or contact us via <a href="#footer">our customer support</a> for catering inquiries.
+        </p>
+
+        <!-- Order Form and Live Price Calculator -->
+        <div>
+            <h2>Online Order Form</h2>
+            <form oninput="totalPrice.value = (parseInt(cupcakes.value)  0) * 3 + (parseInt(cakeslices.value)  0) * 5">
+                
+                <!-- Customer Details -->
+                <p>
+                    <label for="custName">Customer Name:</label><br>
+                    <input type="text" id="custName" name="custName" placeholder="Enter full name" required autofocus>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. 012-3456789" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail Address:</label><br>
+                    <input type="email" id="email" name="email" placeholder="student@campus.edu.my" required>
+                </p>
+
+                <!-- Pick-up Schedule -->
+                <p>
+                    <label for="pickupDate">Pick-up Date:</label><br>
+                    <input type="date" id="pickupDate" name="pickupDate" required>
+                </p>
+
+                <p>
+                    <label for="pickupTime">Pick-up Time:</label><br>
+                    <input type="time" id="pickupTime" name="pickupTime" required>
+                </p>
+
+                <!-- Customization Options -->
+                <p>
+                    <label for="flavour">Flavour:</label><br>
+                    <input list="flavours" id="flavour" name="flavour" placeholder="Choose or type a flavour">
+                    <datalist id="flavours">
+                        <option value="Classic Chocolate">
+                        <option value="Vanilla Bean">
+                        <option value="Red Velvet">
+                        <option value="Strawberry">
+                        <option value="Matcha Green Tea">
+                        <option value="Hazelnut Chocolate">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="icingColor">Icing Colour:</label><br>
+                    <input type="color" id="icingColor" name="icingColor" value="#ffc0cb">
+                </p>
+
+                <p>
+                    <label for="sweetness">Sweetness Level (1 to 5):</label><br>
+                    <input type="range" id="sweetness" name="sweetness" min="1" max="5" step="1" value="3">
+                </p>
+
+                <!-- Order Quantities for Calculator -->
+                <p>
+                    <label for="cupcakes">Cupcakes (RM 3.00 each):</label><br>
+                    <input type="number" id="cupcakes" name="cupcakes" min="0" value="0">
+                </p>
+
+                <p>
+                    <label for="cakeslices">Cake Slices (RM 5.00 each):</label><br>
+                    <input type="number" id="cakeslices" name="cakeslices" min="0" value="0">
+                </p>
+                
+                <!-- Dynamic Price Output -->
+                <p>
+                    <strong>Total Price (RM): </strong>
+                    <output name="totalPrice" for="cupcakes cakeslices">0</output>
+                </p>
+
+                <p>
+                    <input type="submit" value="Submit Pre-Order">
+                </p>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- ==================== 4. Sidebar Section ==================== -->
+    <div id="sidebar">
+        <h3>Price List &amp; Special Offers</h3>
+        <ul>
+            <li>Cupcake &mdash; RM 3.00 / &pound;0.50</li>
+            <li>Cake Slice &mdash; RM 5.00 / &euro;1.00</li>
+            <li>Bulk Discount: Orders &gt; 10 pieces get a free drink!</li>
+            <li>Pre-orders must be submitted &lt; 24 hours in advance</li>
+        </ul>
+    </div>
+
+    <!-- ==================== 5. Footer Section ==================== -->
+    <div id="footer">
+        <p>&copy; 2026 CampusBake&reg;. All Rights Reserved.&nbsp;|&nbsp;Student Campus Centre</p>
+    </div>
+
+    <!-- ==================== Testing Observations ====================
+    Observation 1:
+    When clicking 'Submit' with all fields empty, the form does not submit. 
+    The browser triggers built-in HTML5 validation on the first required field 
+    ('Customer Name') and focuses it with an error tooltip stating: 
+    "Please fill out this field".
+
+    Observation 2:
+    When entering "myemail" into the e-mail input and submitting, the browser 
+    blocks submission and displays a validation warning stating that an '@' is missing 
+    (e.g., "Please include an '@' in the email address. 'myemail' is missing an '@'"), 
+    as the input type="email" enforces standard email address syntax.
+    =============================================================== -->
+
+</body>
+</html>

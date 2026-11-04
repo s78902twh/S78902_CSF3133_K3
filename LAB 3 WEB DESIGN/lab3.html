@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Contact Form</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <h1>Contact Us</h1>
+        <span>We would love to hear from you!</span>
+    </div>
+
+    <!-- Content Section -->
+    <div id="content">
+
+        <!-- Contact Form -->
+        <div id="contact-form">
+            <h2>Contact Form</h2>
+
+            <form onsubmit="alert('Form submitted successfully!'); return false;">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="date">Preferred Contact Date:</label>
+                <input type="date" id="date" name="date" required>
+                <br><br>
+
+                <label for="satisfaction">Satisfaction Level:</label>
+                <input type="range" id="satisfaction"
+                       name="satisfaction" min="0" max="100" value="50"
+                       oninput="level.value = this.value">
+                <output id="level">50</output>
+                <br><br>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
+        <!-- Inline Calculator -->
+        <div id="calculator">
+            <h2>Inline Calculator</h2>
+
+            <label for="num1">First Number:</label>
+            <input type="number" id="num1" value="0">
+            <br><br>
+
+            <label for="num2">Second Number:</label>
+            <input type="number" id="num2" value="0">
+            <br><br>
+
+            <label>Sum:</label>
+            <output id="result">0</output>
+
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <p>Contact Information: wafahananiwafahanani@gmail.com</p>
+        <p>&copy; 2026 Contact Us. All Rights Reserved.</p>
+    </div>
+
+    <!-- JavaScript for Calculator -->
+    <script>
+        const num1 = document.getElementById("num1");
+        const num2 = document.getElementById("num2");
+        const result = document.getElementById("result");
+
+        function calculateSum() {
+            result.value = Number(num1.value) + Number(num2.value);
+        }
+
+        num1.addEventListener("input", calculateSum);
+        num2.addEventListener("input", calculateSum);
+    </script>
+
+</body>
+</html>
