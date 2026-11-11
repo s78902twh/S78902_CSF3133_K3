@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        h2 {
+            text-decoration: overline;
+        }
+
+        .welcome {
+            text-align: center;
+            font-style: italic;
+            color: #9966cc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Personal Webpage</h1>
+        <p class="welcome">Discover more about me, my interests and hobbies!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Home</h2>
+        <article>
+            <h3>Welcome Message</h3>
+            <p>
+                Hello! Welcome to my personal webpage.
+                This website is created using HTML5 and CSS.
+                Here, you can learn more about me and my favourite activities.
+            </p>
+        </article>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <article>
+            <h3>Introduction</h3>
+            <p>
+                I am a University Malaysia Terengganu student who enjoys learning new things
+                and exploring different interests.
+                I created this webpage as part of my HTML5 and CSS lab exercise for my web design course.
+                If you want to know more about me, feel free to explore the other sections of this webpage!
+            </p>
+        </article>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>My Favourite Video</h2>
+
+        <figure>
+            <video controls width="640">
+                <source src="kdaFirestarter.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <video controls width="640">
+                <source src="kdaMore.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <figcaption>
+                Figure 1: Examples of embedded HTML5 videos.
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies">
+        <h2>My Interests and Hobbies</h2>
+
+        <article>
+            <h3>Things I Enjoy</h3>
+            <ul>
+                <li>Listening to music</li>
+                <li>Playing video games</li>
+                <li>Reading books</li>
+                <li>Watching tournaments and music videos</li>
+                <li>Watching movies and dramas</li>
+                <li>Learning new skills especially about animals</li>
+                <li>Sleep</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Form</h2>
+
+        <form action="#" method="get">
+
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <!-- Gender -->
+            <p>Gender:</p>
+
+            <label>
+                <input type="radio" name="gender" value="Male" required>
+                Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="Female">
+                Female
+            </label>
+
+            <!-- Favorite Hobbies -->
+            <p>Favorite Hobbies:</p>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="Music">
+                Listening to Music
+            </label>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="Reading">
+                Reading
+            </label>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="Sports">
+                Sports
+            </label>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="Gaming">
+                Gaming
+            </label>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="Cooking">
+                Cooking & Baking
+            </label>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="Drawing">
+                Drawing & Painting
+            </label>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="Hiking">
+                Hiking & Nature Walks
+            </label>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 11/11/2026 My Personal Webpage. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

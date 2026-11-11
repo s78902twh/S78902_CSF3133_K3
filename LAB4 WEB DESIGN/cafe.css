@@ -1,0 +1,38 @@
+/* 
+  Navigation Bar Styles (Instruction 5)
+  Moved from inline <style> block and extended 
+*/
+ul {
+    list-style-type: none; /* Fixed Error 1 here as well */
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+li {
+    /* Display links as blocks/inline-blocks */
+    display: inline-block; 
+}
+
+li a {
+    display: block;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1A5276;
+}
+
+li a:hover {
+    /* Different background colour on hover */
+    background-color: #ddd; 
+}
+
+/* 
+  Feedback Form Styles (Instruction 8)
+*/
+.feedback-form {
+    background-color: #FDFEFE;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+}
