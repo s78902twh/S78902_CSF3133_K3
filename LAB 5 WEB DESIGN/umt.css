@@ -1,0 +1,103 @@
+/*Background for the body and Google Fonts styling*/
+body {
+    font-family:'Open Sans', sans-serif;
+    background-color: #f0f4f8;
+    color:#333;
+    margin:0;
+    padding:0;
+}
+
+/* Ensure spacing and margins to separate sections[span_15](start_span)[span_15](end_span) */
+header {
+/* Set the background image */
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjTrrWULK-Pr4pmpuiKN0fiEWHETDINv8khWBGBanE9w&s=10');
+
+/* Make the image cover the entire header area */
+background-size: cover;
+
+/* Center the image */
+background-position: center;
+
+/* Add a dark overlay so the white text is still easy to read */
+background-color: #004b87; /* Fallback color */
+background-blend-mode: overlay; 
+
+color: white;
+text-align: center;
+padding: 60px 20px; /* Increased padding to show more of the picture */
+margin-bottom: 0;
+}
+/* Navigation Bar with distinct color[span_16](start_span)[span_16](end_span) */
+nav {
+background-color: #003366;
+display: flex;
+justify-content: center;
+padding: 15px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 20px;
+font-weight: 600;
+padding: 5px 10px;
+transition: background-color 0.3s ease;
+}
+
+/* Hover effects for the links[span_17](start_span)[span_17](end_span) */
+nav a:hover {
+background-color: #0059b3;
+border-radius: 4px;
+}
+
+/* Structural spacing for main content[span_18](start_span)[span_18](end_span) */
+section {
+max-width: 900px;
+margin: 30px auto;
+padding: 20px 30px;
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Proper alignment and spacing for paragraphs[span_19](start_span)[span_19](end_span) */
+p {
+line-height: 1.8;
+text-align: justify;
+margin-bottom: 20px;
+}
+
+/* Table styles to enhance appearance[span_20](start_span)[span_20](end_span) */
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+table, th, td {
+border: 1px solid #ddd;
+}
+
+th, td {
+padding: 12px;
+text-align: left;
+}
+
+th {
+background-color: #004b87;
+color: white;
+}
+
+tr:nth-child(even) {
+background-color: #f9f9f9;
+}
+
+/* Footer Styling: Subtle background color and centered text[span_21](start_span)[span_21](end_span) */
+footer {
+background-color: #e2e8f0;
+color: #4a5568;
+text-align: center;
+padding: 20px;
+margin-top: 40px;
+font-size: 0.9em;
+}
